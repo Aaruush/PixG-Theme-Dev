@@ -9,5 +9,5 @@
             "type": "header"
         }
     },
-    "order": ["404tempalte"]
+    "order": ["404tempalte", "anotherheader"]
 } 
