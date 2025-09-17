@@ -1,13 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "name" : "template 404 pixG",
-    "sections": {
-        "404tempalte": {
-            "type" : "404"
-        },
-
-        "anotherheader": {
-            "type": "header"
-        }
+  "sections": {
+    "404tempalte": {
+      "type": "404",
+      "settings": {}
     },
-    "order": ["404tempalte", "anotherheader"]
-} 
+    "anotherheader": {
+      "type": "header",
+      "disabled": true,
+      "settings": {
+        "nav-bar-heading": "badmos",
+        "menu": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "404tempalte",
+    "anotherheader"
+  ]
+}
