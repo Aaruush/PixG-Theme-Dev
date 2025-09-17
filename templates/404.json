@@ -3,6 +3,10 @@
     "sections": {
         "404tempalte": {
             "type" : "404"
+        },
+
+        "anotherheader": {
+            "type": "header"
         }
     },
     "order": ["404tempalte"]
