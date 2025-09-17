@@ -1,0 +1,9 @@
+{
+    "name" : "template 404 pixG",
+    "sections": {
+        "404tempalte": {
+            "type" : "404"
+        }
+    },
+    "order": ["404tempalte"]
+} 
