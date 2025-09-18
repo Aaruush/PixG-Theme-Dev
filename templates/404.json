@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-{
-    "name" : "template 404 pixG",
-    "sections": {
-        "404tempalte": {
-            "type" : "404",
-        }
-
-    },
-    "order": ["404tempalte"]
-} 
-=======
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -23,7 +11,10 @@
   "sections": {
     "404tempalte": {
       "type": "404",
-      "settings": {}
+      "settings": {
+        "error-page-heading": "Sorry the page you're looking for is not availble haha",
+        "error-page-subheading": "Kindly retry"
+      }
     },
     "anotherheader": {
       "type": "header",
@@ -39,4 +30,3 @@
     "anotherheader"
   ]
 }
->>>>>>> 25e8697a5efdbff083b7b156e136877e7993a746
