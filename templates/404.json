@@ -11,6 +11,9 @@
   "sections": {
     "404tempalte": {
       "type": "404",
+      "custom_css": [
+        "{padding: 300px;}"
+      ],
       "settings": {
         "error-page-heading": "Sorry the page you're looking for is not availble haha",
         "error-page-subheading": "Kindly retry"
