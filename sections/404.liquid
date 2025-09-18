@@ -1,29 +1,33 @@
-<!doctype html>
-<html>
-  <head>
-    <title>{{ page_title }}</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="{{ page_description | escape }}">
-    <link rel="canonical" href="{{ canonical_url }}">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    {{ content_for_header }}
-    <!-- Header hook for plugins -->
-    {{ 'application.css' | asset_url | stylesheet_tag }}
-    {{ 'application.js' | asset_url | script_tag }}
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <body>
-    demo text for 404 page
-    
-    <main role="main">
-      {{ content_for_layout }}  
-    </main>
-  </body>
-</html> 
+<h1> {{ section.settings.error-page-heading }} </h1>
+
+<p> {{ section.settings.error-page-subheading }}  </p>
 
 
-{% comment %} this is tailwind code
- 
-npx @tailwindcss/cli -i ./src/tailwind.css -o ./assets/application.css --watch 
-{% endcomment %}
+{%  schema  %}
+
+{
+"name": "404 Settings",
+"settings": [{
+
+"type": "textarea",
+"id": "error-page-heading",
+"label": "404 Page Heading",
+"default": "Sorry the page you're looking for is not availble"
+
+},{
+
+
+"type": "textarea",
+"id": "error-page-subheading",
+"label": "404 Page Sub-Heading",
+"default": "Kindly retry"
+}
+
+
+
+
+]
+
+
+}
+{%  endschema %}

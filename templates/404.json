@@ -2,12 +2,9 @@
     "name" : "template 404 pixG",
     "sections": {
         "404tempalte": {
-            "type" : "404"
-        },
-
-        "anotherheader": {
-            "type": "header"
+            "type" : "404",
         }
+
     },
-    "order": ["404tempalte", "anotherheader"]
+    "order": ["404tempalte"]
 } 
