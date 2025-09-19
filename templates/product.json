@@ -1,0 +1,9 @@
+{
+    "sections": {
+
+        "product-tempalte":{
+            "type":"product"
+        }
+        
+    }, "order":[ "product-tempalte" ]
+}

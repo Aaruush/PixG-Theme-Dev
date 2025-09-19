@@ -1,0 +1,26 @@
+<div class="w-6xl mx-auto my10">
+  <div class="grid grid-cols-2 md:grid-cols-2 gap-5">
+    <div class="hidden md:block">
+      <div class="product--media">
+        {% for media in product.media %}
+          {% render 'product-media', media: media %}
+          <br>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="product--information">
+        {% form 'product', product %}
+          
+            <div class="my-5">
+                <p class="text-grey-500-xs"> {{product.vendor}}</p>
+            </div>
+
+             <div class="my-5">
+                <h1 class="text-grey-800 5xl"> {{ product.title }}</h1>
+            </div>
+            
+
+        {% endform %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+{% case media.media_type %}
+    {% when 'image' %}
+        <img src="{{media |  img_url: 'large'}}" alt="" class="w-full object-cover">
+
+        {% when 'external_video' %}
+        {{ media | external_video_tag: class:'w-full h-80' }}
+
+        {% when 'video' %}
+            {{ media |  video_tag: class:'w-full h-80', controls: true}}
+        
+
+
+    {% else %}
+        
+{% endcase %}
