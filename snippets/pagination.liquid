@@ -1,0 +1,37 @@
+{% if paginate.pages > 1 %}
+  <nav class="pagination" role="navigation">
+    <ul class="flex space-x-2">
+
+      {%- if paginate.previous %}
+        <li>
+          <a href="{{ paginate.previous.url }}" class="px-3 py-1 border rounded">
+            Previous
+          </a>
+        </li>
+      {% endif %}
+
+      {%- for part in paginate.parts %}
+        <li>
+          {% if part.is_link %}
+            <a href="{{ part.url }}" class="px-3 py-1 border rounded">
+              {{ part.title }}
+            </a>
+          {% else %}
+            <span class="px-3 py-1 border rounded {% if part.title == paginate.current_page %}bg-gray-300{% endif %}">
+              {{ part.title }}
+            </span>
+          {% endif %}
+        </li>
+      {% endfor %}
+
+      {%- if paginate.next %}
+        <li>
+          <a href="{{ paginate.next.url }}" class="px-3 py-1 border rounded">
+            Next
+          </a>
+        </li>
+      {% endif %}
+
+    </ul>
+  </nav>
+{% endif %}
