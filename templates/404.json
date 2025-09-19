@@ -1,42 +1,13 @@
-<<<<<<< HEAD
-{
-    "name" : "template 404 pixG",
-    "sections": {
-        "404tempalte": {
-            "type" : "404",
-        }
 
-    },
-    "order": ["404tempalte"]
-} 
-=======
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "404tempalte": {
       "type": "404",
       "settings": {}
-    },
-    "anotherheader": {
-      "type": "header",
-      "disabled": true,
-      "settings": {
-        "nav-bar-heading": "badmos",
-        "menu": "main-menu"
-      }
     }
-  },
+    }
+  ,
   "order": [
-    "404tempalte",
-    "anotherheader"
+    "404tempalte"
   ]
 }
->>>>>>> 25e8697a5efdbff083b7b156e136877e7993a746

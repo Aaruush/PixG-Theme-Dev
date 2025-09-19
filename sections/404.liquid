@@ -1,33 +1,24 @@
-<h1> {{ section.settings.error-page-heading }} </h1>
+<h1>{{ section.settings['error-page-heading'] }}</h1>
 
-<p> {{ section.settings.error-page-subheading }}  </p>
+<p>{{ section.settings['error-page-subheading'] }}</p>
 
-
-{%  schema  %}
-
+{% schema %}
 {
-"name": "404 Settings",
-"settings": [{
-
-"type": "textarea",
-"id": "error-page-heading",
-"label": "404 Page Heading",
-"default": "Sorry the page you're looking for is not availble"
-
-},{
-
-
-"type": "textarea",
-"id": "error-page-subheading",
-"label": "404 Page Sub-Heading",
-"default": "Kindly retry"
+  "name": "404 Content",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "error-page-heading",
+      "label": "404 Page Heading",
+      "default": "Sorry the page you're looking for is not availble"
+    },
+    {
+      "type": "textarea",
+      "id": "error-page-subheading",
+      "label": "404 Page Sub-Heading",
+      "default": "Kindly retry"
+    }
+  ]
 }
-
-
-
-
-]
-
-
-}
-{%  endschema %}
+{% endschema %}
+ 
