@@ -1,13 +1,47 @@
+<<<<<<< HEAD
 
+=======
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+>>>>>>> 03c0184518e3a7c53c01203e776c88828ca49f86
 {
   "sections": {
     "404tempalte": {
       "type": "404",
+<<<<<<< HEAD
       "settings": {}
+=======
+      "custom_css": [
+        "{padding: 300px;}"
+      ],
+      "settings": {
+        "error-page-heading": "Sorry the page you're looking for is not availble haha",
+        "error-page-subheading": "Kindly retry"
+      }
+    },
+    "anotherheader": {
+      "type": "header",
+      "disabled": true,
+      "settings": {
+        "nav-bar-heading": "badmos",
+        "menu": "main-menu"
+      }
+>>>>>>> 03c0184518e3a7c53c01203e776c88828ca49f86
     }
     }
   ,
   "order": [
     "404tempalte"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 03c0184518e3a7c53c01203e776c88828ca49f86
