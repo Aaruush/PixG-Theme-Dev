@@ -1,7 +1,17 @@
 {% paginate collection.products by 12 %}
     {% for product in collection.products %}
-        <h1>{{product.title}}</h1>
-        hello
+<a href="{{product.url}}">
+
+
+<div>
+    <img src="{{product.featured_image |  img_url: 'medium' }}" alt="">
+    </img>
+    <h1> {{product.title}}</h1>
+    <span>{{ product.vendor }}</span>
+    <p>{{ product.price |  money }}</p>
+    
+</div>
+</a>
         {%  else %}
         <h1>there are no products</h1>
     {% endfor %}
